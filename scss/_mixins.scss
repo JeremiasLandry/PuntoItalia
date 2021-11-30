@@ -1,0 +1,25 @@
+// FONDO Y FUENTE
+@mixin colores($background,$fuente){
+    background-color:$background;
+    color:$fuente;
+}
+// FUENTE
+@mixin fonts($family,$family2,$style,$weight,$size){
+    font-family:$family,$family2;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+}
+// TAMAÑO
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+// FLEX PROPERTIES
+@mixin flex($display,$justify-content, $align-items, $align-content,$flex-direction){
+    display:$display;
+    justify-content:$justify-content;
+    align-items:$align-items;
+    align-content:$align-content;
+    flex-direction:$flex-direction;
+}

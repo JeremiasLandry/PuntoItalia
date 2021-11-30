@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tags -->
+    <meta name='description' content="Punto Italia es un amistoso restaurante Italiano que se destaca por utilizar los mejores ingredientes de Italia. 
+    Disfrute de una selección de nuestra amplia sección de antipasti, ensaladas, platos principales y postres.">
+    <meta name="keywords" content="Restaurante Italiano, restaurante, italiano, comida italiana, comida, italia, reservas, comida de italia, pizza, spaghetti">
+    <!-- Favicones -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reinicia los valores predeterminados del navegador -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- link de bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7814ad840d.js" crossorigin="anonymous"></script>
+    <!-- link del css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Titulo -->
+    <title>Reservar - Punto Italia</title>
+</head>
+<body>
+    <header class='encabezado'>
+      <a href='../index.html' class='d-md-flex justify-content-md-start' id='logotipo'>Punto Italia</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nuestraCarta.html">Nuestra Carta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="reservar.html">Reservar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class='reservarGrid'>
+        <!-- Presentacion, video de fondo con Titulo de seccion -->
+        <section class='mainBanner reservarSection'>
+            <div class="backgroundVideo">
+                <video width='100%' height='100%' autoplay muted loop>
+                    <source src='multimedia/pizza.mp4' type='video/mp4'>
+                </video>
+            </div>
+            <!-- CARTAS CON LOS PASOS A SEGUIR PARA RESERVAR -->
+            <div class="ReservaTitle">
+              <div class="row d-flex align-items-start align-content-start">
+
+                <!-- CARTA 'ELIGE N° DE PERSONAS' -->
+                <div class="col-md-4">
+                  <div class="card reservarCard-Container">
+                    <div class="card-body reservarCards">
+                      <h2 class="card-title">ELIGE</h2>
+                      <input type="number" id="tentacles" name="tentacles" min="0" max="10" placeholder="0">
+                      <p class="card-text">N° DE PERSONAS</p>
+                      <button type="button" class="btn btn-outline-light">CONFIRMAR</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- CARTA 'SELECCIONA LAS FECHAS DISPONIBLES' -->
+                <div class="col-md-4">
+                  <div class="card reservarCard-Container">
+                    <div class="card-body reservarCards">
+                      <h2 class="card-title">FECHA</h2>
+                      <input type="date" id="start" name="trip-start" value="2021-11-30" min="2021-11-30" max="2021-12-31">
+                      <p class="card-text">SELECCIONA LAS FECHAS DISPONIBLES</p>
+                      <button type="button" class="btn btn-outline-light">CONFIRMAR</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- CARTA 'SELECCIONA UN HORARIO DISPONIBLE' -->
+                <div class="col-md-4">
+                  <div class="card reservarCard-Container">
+                    <div class="card-body reservarCards">
+                      <h2 class="card-title">HORA</h2>
+                      <select name="select">
+                        <option value="value1">12:00 PM</option>
+                        <option value="value2" selected>01:00 PM</option>
+                        <option value="value3">02:00 PM</option>
+                        <option value="value3">02:30 PM</option>
+                        <option value="value3">03:00 PM</option>
+                        <option value="value3">04:30 PM</option>
+                        <option value="value3">05:30 PM</option>
+                        <option value="value3">06:00 PM</option>
+                      </select>
+                      <p class="card-text">SELECCIONA UN HORARIO DISPONIBLE</p>
+                      <button type="button" class="btn btn-outline-light">CONFIRMAR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class='footerGrid'>
+        <div class="LadoIzq">
+            <p>Copyright 2005-2021 | Libre de uso</p>
+        </div>
+        <div class="LadoDer">
+            <p>Podes encontrarnos en</p>
+            <p><a href="#" target="_blank"><i class="fab fa-instagram"></i></a> | <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a> | <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Cambios realizados para el desafio 'APLICAR SEO A NUESTRA PAGINA':
+- Estructuré cada pagina para que las etiquetas 'h' tengan un orden jerarquico. (h1,h2,h3,etc)
+- Agregué ALT a todas las etiquetas 'img'.
+- Agregué las siguientes meta tags para todas las paginas del sitio: description,keywords,favicon.
+- Elimine el 'stylesheet.css' y migre el codigo a SASS.
+- Agregué los target blank a todos los links sobre redes sociales.
+- Comprimi la calidad de imagen de todas las fotos de la pagina en al menos un 50%.
+- Agregué mas comentarios al codigo.
+- Añadí titulo y descripción del proyecto al Package.json
+- Escribí otra media query para mejorar el estilo en mobile de la pagina 'contacto' que antes se veía mal.
+- Añadí un logo al encabezado que te lleva al inicio desde cualquier parte de la pagina.

@@ -1,0 +1,55 @@
+// IMPORTS
+@import "colores";
+@import "mixins";
+@import "header";
+@import "logo";
+@import "videoSection";
+@import "nuestraCarta";
+@import "reservar";
+@import "contacto";
+@import "cards";
+@import "footer";
+@import "mediaqueries";
+
+/* ESTILOS GENERALES */
+
+html{
+    @include fonts('Open Sans',sans-serif,normal,normal,14px);
+}
+
+body{
+    background-color:transparent;
+    overflow-x: hidden;
+}
+
+.mainBanner{
+    @include sizes(100%,100vh);
+    overflow-x: hidden;
+    position:relative;
+    grid-area: encabezado;
+    margin:0;
+}
+
+/* seccion de EVENTOS Y LISTA DE EVENTOS */
+
+.listaDePlatos{
+    background-color:rgb(37, 37, 37);
+    background-image: url(../Contenido/multimedia/comidaFondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -1px 129px 55px -45px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: -1px 129px 55px -45px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: -1px 129px 55px -45px rgba(0,0,0,0.75) inset;
+    padding-bottom: 10px;
+    @include flex(flex,center,center,center,column);
+    margin:0;
+    .platosDestacadosTitulo{
+        @include colores(transparent,$colorFuente);
+        padding: 5px;
+        padding-bottom: 100px;
+        margin-bottom:5px;
+        text-align: center;
+        font-size:4em;
+    }
+}
+

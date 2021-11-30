@@ -1,0 +1,24 @@
+@media screen and (min-width:1205px){
+    #eventoCard{
+        margin:50px auto;
+    }
+}
+// CAMBIO DE ESTILO PARA LA PAGINA 'CONTACTANOS', CAMBIA ESPECIFICAMENTE EL ORDEN DE LA INFORMACION DE CONTACTO A MODO HORIZONTAL PARA VISUALIZARSE MEJOR EN MOBILE
+@media screen and (max-width:768px){
+    .contactPage{
+        .container{
+         display:none;
+        }
+        .contactResponsive{
+            display:flex;
+            flex-direction:column;
+            .socialMedia{
+                a{
+                    color:#fff;
+                }
+            }
+        }
+    }
+        
+        
+}

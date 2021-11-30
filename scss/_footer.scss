@@ -1,0 +1,31 @@
+.footerGrid{
+    display:grid;
+    grid-template-rows:100%;
+    grid-template-columns:50% 50%;
+    grid-template-areas: "ladoIzq ladoDer";
+    .LadoIzq{
+        grid-area: ladoIzq;
+        @include flex(flex,flex-start,center,center,row);
+    }
+    .LadoDer{
+        grid-area: ladoDer;
+        @include flex(flex,flex-end,center,center,row);
+        p{
+            margin: 0 15px;
+        }    
+    }
+}
+
+
+footer{
+    background-color: $colorPrincipal;
+    color: $colorFuente;
+    padding: 25px;
+    a{
+        text-decoration:underline;
+        color: $colorFuente;
+        &:hover{
+            color: blueviolet;
+        }    
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tags -->
+    <meta name='description' content="Punto Italia es un amistoso restaurante Italiano que se destaca por utilizar los mejores ingredientes de Italia. 
+    Disfrute de una selección de nuestra amplia sección de antipasti, ensaladas, platos principales y postres.">
+    <meta name="keywords" content="Restaurante Italiano, restaurante, italiano, comida italiana, comida, italia, reservas, comida de italia, pizza, spaghetti">
+    <!-- Favicones -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="../favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reinicia los valores predeterminados del navegador -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- link de bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7814ad840d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- link del css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Titulo -->
+    <title>Nuestra Carta - Punto Italia</title>
+</head>
+<body>
+    <header class='encabezado'>
+      <a href='../index.html' class='d-md-flex' id='logotipo'>Punto Italia</a>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="nuestraCarta.html">Nuestra Carta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservar.html">Reservar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class='Container'>
+        <!-- VIDEO DE FONDO CON LOS TITULOS DE BIENVENIDA-->
+        <section class='mainBanner row'>
+            
+            <div class="backgroundVideo col-lg-6">
+                <video width='100%' height='100%' autoplay muted loop>
+                    <source src='multimedia/pizza.mp4' type='video/mp4'>
+                </video>
+            </div>
+            <!-- TITULO Y FLECHA DE DESPLAZAMIENTO -->
+            <div class="slogan col-lg-6">
+                <h1>Nuestra carta</h1>
+                <a href='#IrAPlatosDestacados'><i class="fas fa-arrow-down"></i></a>
+            </div>
+        </section>
+        <!-- Platos destacados -->
+        <section class='listaDePlatos row'>
+            <div class='col-lg-12'>
+                <h2 class='platosDestacadosTitulo' id='IrAPlatosDestacados'>MENÚ PRINCIPAL</h2>
+                <!-- APERITIVOS CARD -->
+                <div class="card mb-3 d-md-flex flex-column" id='eventoCard' style="max-width: 1200px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src='multimedia/aperitivo.jpg' alt="plato de lasagna" class="img-fluid rounded-start antipasti">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h3 class="card-title">ANTIPASTI (aperitivos)</h3>
+                          <ul class='card-text aperitivos'>
+                            <li>berenjenas a la parmesana - <strong>$ 890</strong></li>
+                            <li>mozzarella rebozada frita - <strong>$ 990</strong></li>
+                            <li>anillas de calamar fritas - <strong>$ 1450</strong></li>
+                            <li>langostinos grillados - <strong>$ 1350</strong></li>
+                         </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- ENSALADAS CARD -->
+                <div class="card mb-3 d-md-flex flex-column" id='eventoCard' style="max-width: 1200px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src='multimedia/ensalada.jpg' alt="ensalada" class="img-fluid rounded-start ">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h3 class="card-title">INSALATE (ensaladas)</h3>
+                        <ul class='card-text aperitivos'>
+                          <li>Caesar clasica con pollo - <strong>$ 950</strong></li>
+                          <li>Insalata Omertá- <strong>$ 950</strong></li>
+                          <li>Di salmone (de salmon) - <strong>$ 1290</strong></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- PASTAS CARD -->
+              <div class="card mb-3 d-md-flex flex-column" id='eventoCard' style="max-width: 1200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src='multimedia/pasta.jpg' alt="pastas" class="img-fluid rounded-start ">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Pasta Asciutta</h3>
+                      <ul class='card-text aperitivos'>
+                        <li>Penne Rigate - <strong>$ 990</strong></li>
+                        <li>Spaghettis con frutos de mar - <strong>$ 1350</strong></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- PASTA ARTESANAL -->
+            <div class="card mb-3 d-md-flex flex-column" id='eventoCard' style="max-width: 1200px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src='multimedia/pasta2.jpg' alt="pastas" class="img-fluid rounded-start ">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Pasta Artigianale (pasta artesanal)</h3>
+                    <ul class='card-text aperitivos'>
+                      <li>Gnocchi de espinaca cuatro quesos - <strong>$ 1050</strong></li>
+                      <li>Fusilli mediterraneo - <strong>$ 1050</strong></li>
+                      <li>Ravioli mediterraneo - <strong>$ 1050</strong></li>
+                      <li>Ravioli Omertá - <strong>$ 1050</strong></li>
+                      <li>Sorrentino margherita - <strong>$ 1050</strong></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class='footerGrid'>
+        <div class="LadoIzq">
+            <p>Copyright 2005-2021 | Libre de uso</p>
+        </div>
+        <div class="LadoDer">
+            <p>Podes encontrarnos en</p>
+            <p><a href="#" target="_blank"><i class="fab fa-instagram"></i></a> | <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a> | <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+</body>
+</html>

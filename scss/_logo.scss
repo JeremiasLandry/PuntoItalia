@@ -1,0 +1,13 @@
+// LOGO DE LA PAGINA
+#logotipo{
+    font-family: 'Indie Flower', cursive;
+    z-index: 11000001;
+    color:$colorFuente;
+    font-size:30px;
+    margin:10px 15px;
+    text-decoration: none;
+    transition:transform .3s ease-in;
+    &:hover{
+        transform:scale(.92,.92);
+    }
+}

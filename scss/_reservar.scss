@@ -1,0 +1,35 @@
+/* ESTILOS DE 'RESERVAR' */
+.reservarGrid{
+    display:grid;
+    grid-template-areas:'titulo';
+    grid-template-rows:100%;
+    height:100vh;
+    .reservarSection{
+        @include sizes(100%,100%);
+        grid-area: titulo;
+        .ReservaTitle{
+            @include flex(flex,space-around,center,center,row);
+            @include sizes(100%,100vh);
+            margin: auto auto;
+            .reservarCard-Container{
+                max-width: 70%;
+                display: flex;
+                margin: auto auto;
+                justify-content:flex-end;
+                margin-bottom: 20px;
+                .reservarCards{
+                    padding-top:20px;
+                    padding-bottom:20px;
+                    height:auto;
+                    min-height:200px;
+                    @include flex(flex,space-between,center,center,column);
+                    @include colores($colorPrincipal,$colorFuente);
+                    p{
+                        padding:10px;
+                    }     
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+/* CONTENEDOR DEL SLOGAN DE LA PAGINA INICIO */
+
+.slogan{
+    z-index: 1;
+    @include flex(flex,center,center,center,column);
+    margin: auto auto;
+    height: 100%;
+    padding: 0;
+
+    /* BOTON DEBAJO DEL SLOGAN */
+    a{
+        color: $colorFuente;
+        @include flex(flex,center,center,center,row);
+        margin: auto auto;
+        margin-top: 35px; 
+        font-size: 1.5em;
+        z-index: 1;
+        text-decoration: none;
+        outline: 1px solid #fff;
+        padding: 15px;
+        border-radius: 10px;
+        transition: transform .5s ease-in;
+        &:hover{
+            transform:scale(.9,.9);
+        }
+    }
+}
+/* TITULO DE BIENVENIDO DENTRO DEL CONTENEDOR SLOGAN */
+.mainBanner{
+    .slogan{
+        h1{
+            @include flex(flex,center,center,center,row);
+            color: $colorFuente;
+            margin: auto auto;
+            margin-bottom:0;
+            font-size: 4em;
+            z-index: 1;
+            text-align: center;
+        }
+    }
+    /* VIDEO DE FONDO */
+    .backgroundVideo{
+        position: absolute;
+        @include sizes(100%,100%);
+        @include flex(flex,center,center,center,row);
+        z-index: -1000;
+        bottom:0;
+        overflow: hidden;
+        filter: brightness(49%);
+        -webkit-filter: brightness(49%);
+        -moz-filter: brightness(49%);
+        video{
+            @include sizes(auto,1080px);
+            @include flex(flex,flex-start,flex-start,flex-start,row);
+            margin: auto auto;
+            bottom:0;
+            position:absolute;
+            bottom:0;
+        }
+    }
+}
+

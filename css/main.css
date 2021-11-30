@@ -1,0 +1,270 @@
+.encabezado {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  z-index: 11000000;
+  box-shadow: 3px 60px 21px -38px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 3px 60px 21px -38px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 3px 60px 21px -38px rgba(0, 0, 0, 0.75) inset;
+  justify-content: space-between; }
+
+#logotipo {
+  font-family: 'Indie Flower', cursive;
+  z-index: 11000001;
+  color: #fff;
+  font-size: 30px;
+  margin: 10px 15px;
+  text-decoration: none;
+  transition: transform .3s ease-in; }
+  #logotipo:hover {
+    transform: scale(0.92, 0.92); }
+
+/* CONTENEDOR DEL SLOGAN DE LA PAGINA INICIO */
+.slogan {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: auto auto;
+  height: 100%;
+  padding: 0;
+  /* BOTON DEBAJO DEL SLOGAN */ }
+  .slogan a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin: auto auto;
+    margin-top: 35px;
+    font-size: 1.5em;
+    z-index: 1;
+    text-decoration: none;
+    outline: 1px solid #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform .5s ease-in; }
+    .slogan a:hover {
+      transform: scale(0.9, 0.9); }
+
+/* TITULO DE BIENVENIDO DENTRO DEL CONTENEDOR SLOGAN */
+.mainBanner {
+  /* VIDEO DE FONDO */ }
+  .mainBanner .slogan h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    color: #fff;
+    margin: auto auto;
+    margin-bottom: 0;
+    font-size: 4em;
+    z-index: 1;
+    text-align: center; }
+  .mainBanner .backgroundVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    z-index: -1000;
+    bottom: 0;
+    overflow: hidden;
+    filter: brightness(49%);
+    -webkit-filter: brightness(49%);
+    -moz-filter: brightness(49%); }
+    .mainBanner .backgroundVideo video {
+      width: auto;
+      height: 1080px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-direction: row;
+      margin: auto auto;
+      bottom: 0;
+      position: absolute;
+      bottom: 0; }
+
+/* ESTILOS DE 'NUESTRA CARTA' */
+.aperitivos {
+  list-style-type: none; }
+  .aperitivos li {
+    padding: 5px 0; }
+
+.antipasti {
+  object-fit: cover; }
+
+/* ESTILOS DE 'RESERVAR' */
+.reservarGrid {
+  display: grid;
+  grid-template-areas: 'titulo';
+  grid-template-rows: 100%;
+  height: 100vh; }
+  .reservarGrid .reservarSection {
+    width: 100%;
+    height: 100%;
+    grid-area: titulo; }
+    .reservarGrid .reservarSection .ReservaTitle {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      flex-direction: row;
+      width: 100%;
+      height: 100vh;
+      margin: auto auto; }
+      .reservarGrid .reservarSection .ReservaTitle .reservarCard-Container {
+        max-width: 70%;
+        display: flex;
+        margin: auto auto;
+        justify-content: flex-end;
+        margin-bottom: 20px; }
+        .reservarGrid .reservarSection .ReservaTitle .reservarCard-Container .reservarCards {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          height: auto;
+          min-height: 200px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          align-content: center;
+          flex-direction: column;
+          background-color: #000;
+          color: #fff; }
+          .reservarGrid .reservarSection .ReservaTitle .reservarCard-Container .reservarCards p {
+            padding: 10px; }
+
+/* ESTILOS DE CONTACTO */
+.contactPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: auto auto;
+  padding: 5%; }
+  .contactPage h1 {
+    color: #fff;
+    font-size: 2em;
+    margin: 1% 10%; }
+  .contactPage .pb-3 {
+    color: #fff; }
+  .contactPage h3 {
+    font-size: 1em;
+    color: #fff; }
+  .contactPage .contactResponsive {
+    display: none; }
+  .contactPage .contactCard {
+    border: 1px solid #fff;
+    min-width: 282px; }
+    .contactPage .contactCard .container {
+      border: none;
+      padding: 5%; }
+      .contactPage .contactCard .container .socialMedia a {
+        color: #fff; }
+
+#eventoCard {
+  margin: auto auto;
+  background-color: #000;
+  color: #fff; }
+
+.footerGrid {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "ladoIzq ladoDer"; }
+  .footerGrid .LadoIzq {
+    grid-area: ladoIzq;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; }
+  .footerGrid .LadoDer {
+    grid-area: ladoDer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; }
+    .footerGrid .LadoDer p {
+      margin: 0 15px; }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 25px; }
+  footer a {
+    text-decoration: underline;
+    color: #fff; }
+    footer a:hover {
+      color: blueviolet; }
+
+@media screen and (min-width: 1205px) {
+  #eventoCard {
+    margin: 50px auto; } }
+
+@media screen and (max-width: 768px) {
+  .contactPage .container {
+    display: none; }
+  .contactPage .contactResponsive {
+    display: flex;
+    flex-direction: column; }
+    .contactPage .contactResponsive .socialMedia a {
+      color: #fff; } }
+
+/* ESTILOS GENERALES */
+html {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px; }
+
+body {
+  background-color: transparent;
+  overflow-x: hidden; }
+
+.mainBanner {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  grid-area: encabezado;
+  margin: 0; }
+
+/* seccion de EVENTOS Y LISTA DE EVENTOS */
+.listaDePlatos {
+  background-color: #252525;
+  background-image: url(../Contenido/multimedia/comidaFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -1px 129px 55px -45px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: -1px 129px 55px -45px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: -1px 129px 55px -45px rgba(0, 0, 0, 0.75) inset;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0; }
+  .listaDePlatos .platosDestacadosTitulo {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    padding-bottom: 100px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 4em; }

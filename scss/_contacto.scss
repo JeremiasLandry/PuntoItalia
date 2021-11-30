@@ -1,0 +1,36 @@
+/* ESTILOS DE CONTACTO */
+.contactPage{
+    @include sizes(100%,100vh);
+    @include flex(flex,center,center,center,column);
+    margin: auto auto;
+    padding:5%;
+    h1{
+        color:$colorFuente;
+        font-size: 2em;
+        margin:1% 10%;
+    }
+    .pb-3{
+        color:$colorFuente;
+    }
+    h3{
+        font-size:1em;
+        color:$colorFuente;
+    }
+    .contactResponsive{
+        display:none;
+    }
+    .contactCard{
+        border:1px solid #fff;
+        min-width: 282px;
+        .container{
+            border: none;
+            padding:5%;
+            .socialMedia{
+                a{
+                    color:$colorFuente;
+                }
+            }
+        }
+    }
+       
+}
